@@ -13,7 +13,8 @@ body{
     width: 1200px;
 }
 
-h1{
+
+.marquee h1{
     font-size: 48px;
     font-style: italic;
     font-weight: bold;
@@ -22,7 +23,14 @@ h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter:drop-shadow(1px 1px 0px black);
+}
 
+.count{
+    margin: 0 auto;
+    text-align: center;
+}
+.count p{
+    text-align: center;
 }
 
 
