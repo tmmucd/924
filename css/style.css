@@ -3,22 +3,28 @@
 
 body{
     font-family: MS Gothic、MS ゴシック;
+    background-image: url(../img/bg.png);
+    background-size: 20px;
+    background-repeat: repeat;
 }
 
 .wrapper{
-    margin: 80px auto;
+    margin: 30px auto;
     width: 1200px;
 }
 
 h1{
-    font-size: 32px;
+    font-size: 48px;
     font-style: italic;
     font-weight: bold;
     text-align: center;
     background: linear-gradient(10deg, #1bad07 30%, #fdee00 50%, #fd0000 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter:drop-shadow(1px 1px 0px black);
+
 }
+
 
 .box01{
     margin:60px auto;
