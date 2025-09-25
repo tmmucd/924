@@ -1,8 +1,8 @@
 @charset "utf-8";
+
 /* CSS Document */
 
 body{
-    font-family: MS Gothic、MS ゴシック;
     background-image: url(../img/bg.png);
     background-size: 20px;
     background-repeat: repeat;
@@ -13,8 +13,8 @@ body{
     width: 1200px;
 }
 
-
 .marquee h1{
+       font-family: MS Gothic,MS ゴシック;
     font-size: 48px;
     font-style: italic;
     font-weight: bold;
@@ -33,8 +33,85 @@ body{
     text-align: center;
 }
 
+ul{
+    margin:20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+li{
+    /* color: #db1e1e; */
+    list-style:none;
+    font-size: 36px;
+    font-family: "HGP創英角ﾎﾟｯﾌﾟ体";
+    font-weight: 900;
+    font-style: italic;
+    /* border: 1px solid #db1e1e; */
+    padding:4px 17px 8px 15px ;
+}
+.li01{
+    background-color: aqua;
+    color: #8b8203;
+    p{filter:drop-shadow(1px 1px 0px black);}
+}
+.li02{
+    background-color: #ff59f7;
+}
+.li03{
+    background-color: #67ffbf;
+}
+.li04{
+    background-color: #ffff00;
+}
+.li05{
+    background-image: url(../img/bg02.jpg);
+    background-size: 45px;
+}
 
 .box01{
     margin:60px auto;
     width:800px;
+}
+
+.rikaioya{
+    width:200px;
+    height: 150px;
+    margin: -40px 0 0 -40px;
+    border:  solid #000;
+    border-radius: 5px;
+    font-size: 36px;
+    padding:0 0 0 20px;
+    /* Animation property */
+  animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+
+.rikai{
+    width:230px;
 }
