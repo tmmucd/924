@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+.mochiy-pop-one-regular {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* CSS Document */
 
 body{
@@ -37,26 +43,37 @@ ul{
     margin:20px 0 0 0;
     display: flex;
     justify-content: center;
-    gap:20px;
+    gap:25px;
 }
 
 li{
-    /* color: #db1e1e; */
-    list-style:none;
+    /* border: 1px solid #db1e1e; */
+    padding:4px 17px 8px 15px ;
+        list-style:none;
     font-size: 36px;
     font-family: "HGP創英角ﾎﾟｯﾌﾟ体";
     font-weight: 900;
     font-style: italic;
-    /* border: 1px solid #db1e1e; */
-    padding:4px 17px 8px 15px ;
+}
+li p{
+        /* color: #db1e1e; */
+    font-size: 36px;
+    font-family: "HGP創英角ﾎﾟｯﾌﾟ体";
+    font-weight: 900;
+    font-style: italic;
 }
 .li01{
     background-color: aqua;
-    color: #8b8203;
+    color: #a7a043;
     p{filter:drop-shadow(1px 1px 0px black);}
 }
 .li02{
     background-color: #ff59f7;
+    p{
+          background: linear-gradient(180deg, #58c6ff 0%, #076ad9 40%, #ff0000 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
 }
 .li03{
     background-color: #67ffbf;
@@ -69,15 +86,16 @@ li{
     background-size: 45px;
 }
 
-.box01{
-    margin:60px auto;
-    width:800px;
+.moomin{
+    /* border: 1px solid #000; */
+    margin: -185px 0 0 -70px;
+    transform: rotate(-1deg);
 }
 
 .rikaioya{
     width:200px;
     height: 150px;
-    margin: -40px 0 0 -40px;
+    margin: 5px 0 0 -40px;
     border:  solid #000;
     border-radius: 5px;
     font-size: 36px;
@@ -114,4 +132,6 @@ li{
 
 .rikai{
     width:230px;
+    font-family: "MS Gothic","MS ゴシック";
+    font-family: "Mochiy Pop One", sans-serif;
 }
