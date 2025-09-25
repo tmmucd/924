@@ -19,8 +19,13 @@ body{
     width: 1200px;
 }
 
+a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+    color:#000;
+}
+
 .marquee h1{
-       font-family: MS Gothic,MS ゴシック;
+       font-family: "MS Gothic","MS ゴシック";
     font-size: 48px;
     font-style: italic;
     font-weight: bold;
@@ -46,6 +51,8 @@ ul{
     gap:25px;
 }
 
+
+
 li{
     /* border: 1px solid #db1e1e; */
     padding:4px 17px 8px 15px ;
@@ -66,6 +73,8 @@ li p{
     background-color: aqua;
     color: #a7a043;
     p{filter:drop-shadow(1px 1px 0px black);}
+    a:link,a:hover,a:visited,a:active{color: #a7a043;
+    filter:drop-shadow(1px 1px 0px black);}
 }
 .li02{
     background-color: #ff59f7;
@@ -74,23 +83,71 @@ li p{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     }
+     a:link,a:hover,a:visited,a:active{
+          background: linear-gradient(180deg, #58c6ff 0%, #076ad9 40%, #ff0000 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
 }
 .li03{
     background-color: #67ffbf;
+    border: 5px solid #d3b65f;
+a:link,a:hover,a:visited,a:active{}
 }
+
 .li04{
     background-color: #ffff00;
+    border: 2px dotted #000;
 }
 .li05{
     background-image: url(../img/bg02.jpg);
     background-size: 45px;
 }
-
+.li06{
+    background-image: url(../img/bg03.jpg);
+    background-size: 45px;
+}
+.li07{
+    background-color: #15b200;
+    background-size: 45px;
+    border: 5px groove #b24ef9;
+}
+.li08{
+    background-color: #a2fffd;
+    background-size: 45px;
+    border: 5px double #fbff00;
+}
 .moomin{
     /* border: 1px solid #000; */
-    margin: -185px 0 0 -70px;
-    transform: rotate(-1deg);
+    display: flex;
+    margin: -265px 0 0 -70px;
+        width: auto;
+        height: fit-content;
+        /* border: 1px solid #000; */
+    img{
+        transform: rotate(-1deg);
+        /* border: 1px solid #000; */
+    }
 }
+.phako{
+        width:400px;
+        margin:40px 0 0 800px;
+        font-family: "MS Gothic","MS ゴシック";
+        font-size: 20px;
+        color:#ff0000;
+        /* border: 1px solid #000; */
+          animation: gatagata .3s infinite;
+        scale: 1;
+}
+
+@keyframes gatagata{
+ 0%{transform:translateY(0)}
+ 25%{transform:translate(0px, 2px) rotateZ(1deg)}
+ 50%{transform:translate(0px, 2px) rotateZ(0deg)}
+ 75%{transform:translate(2px, 2px) rotateZ(-1deg)}
+ 100%{transform:translate(0px, 0px) rotateZ(0deg)}
+}
+
 
 .rikaioya{
     width:200px;
