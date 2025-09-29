@@ -596,7 +596,8 @@ p{
     font-size: 60px;
     font-family: Rochester;
     color:#574e00 ;
-    text-align: center;}
+    text-align: center;
+    margin: 30px 0 0 0 ;}
 }
 
 .testbox{
@@ -653,4 +654,32 @@ p{width:700px;
 .text04{
     /* border: 1px solid #000; */
     padding:20px 0 80px 0;
+}
+.pagetop2 {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    background: #fff;
+    border: solid 2px #aee5ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.pagetop__arrow2 {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #ff9fcc;
+    border-right: 3px solid #ff9fcc;
+    transform: translateY(20%) rotate(-45deg);
+}
+@media (hover: hover) and (pointer: fine) {
+    .pagetop2:hover, .pagetop2:hover .pagetop__arrow2 {
+        background: #ffd1e6;
+        border-color: #ffffff;
+    }
 }
