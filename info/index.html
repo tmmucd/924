@@ -13,14 +13,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
 <!--jQuery本体-->
 <script src="../js/jquery-1.11.2.min.js"></script>
-<script src="../js/fade.js"></script>
+<script src="../js/jquery.inview.js"></script>
 
 <!--ready関数-->
-<script>
-$(function(){
-
+ <script> 
+$(function () {
+  $(".infobox01").on("inview", function () {
+    $(this).addClass("is-inview");
+  });
 });
-</script>
+ </script>
+
+
+
 </head>
 <body>
 <div class="wrapper3">
@@ -41,35 +46,39 @@ $(function(){
 
 <div class="testbox"></div>
 
+<section>
+      <div class="sentinel"></div>
 <div class="infobox01">
 <h2>未明を聞き取り、顕現を導く</h2>
-<p>未明顕現義塾は、まだ形を持たぬ未明の声を聞き取り、<br>
+<p class="text01">未明顕現義塾は、まだ形を持たぬ未明の声を聞き取り、<br>
     それを内奥に顕現させることを第一とします。<br>
     <br>
     知識や学力の向上は顕現への準備であり、最終の目的ではありません。<br>
     学びは器を整え、器が整えば顕現は自然に訪れるのです。</p>
 </div>
+</section>
 
-<div class="infobox02">
-<h2>因果の響きを尊重する</h2>
-<p>生徒一人ひとりには固有の「因果の残響」が眠っています。<br>
+<div class="infobox01">
+
+    <h2>因果の響きを尊重する</h2>
+<p class="text02">生徒一人ひとりには固有の「因果の残響」が眠っています。<br>
     本義塾はその響きを乱さず、整えていくことを教育としています。<br>
     <br>
     授業は科目に分かれていても、すべては顕現のための練習です。<br>
     数学は秩序を示し、国語は言葉の裂け目を開き、体育は身体を媒体として鍛えます。</p>
 </div>
 
-<div class="infobox03">
-<h2>規律は未明への整列</h2>
-<p>規律を守ることは単なる服従ではありません。それは未明に対する整列の行為です。<br>
+<div class="infobox01">
+<h2 class="h203">規律は未明への整列</h2>
+<p class="text03">規律を守ることは単なる服従ではありません。それは未明に対する整列の行為です。<br>
     声を合わせ、歩調を揃え、同じ空を仰ぐとき、そこに顕現の兆しが訪れます。<br>
     小さな一体感の積み重ねが、やがて未明を照らす光へとつながるのです。</p>
 
 </div>
 
-<div class="infobox04">
-<h2>進路の外に立つ学び</h2>
-<p>未明顕現義塾での学びは、将来の進路に直接役立つとは限りません。<br>
+<div class="infobox01">
+<h2 class="h203">進路の外に立つ学び</h2>
+<p class="text04">未明顕現義塾での学びは、将来の進路に直接役立つとは限りません。<br>
     しかし顕現を果たした者は、すでに進路の外に立ち、自らの声で世界を決定しています。<br>
     わたしたちは「まだ見えぬもの」を教育するのです。</p>
 </div>

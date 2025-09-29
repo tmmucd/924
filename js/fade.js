@@ -1,14 +1,19 @@
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const section = entry.target.closest("section");
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+    } else {
+      entry.target.classList.remove("is-visible");
+    }
+  });
+});
+
+document.querySelectorAll(".sentinel").forEach(el => observer.observe(el));
+
+// スクロールして表示領域に入ったらclass付与
 $(function () {
-  $(window).scroll(function () {
-    $('.infobox01').each(function () {
-      var elemPos = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if (scroll > elemPos - windowHeight) {
-        $(this).addClass('active');
-      } else {
-        $(this).removeClass('active');
-      }
-    });
+  $(".infobox01").on("inview", function () {
+    $(this).addClass("is-inview");
   });
 });
