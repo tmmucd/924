@@ -615,12 +615,13 @@ p{
       opacity: 0; /* 最初は非表示 */
   transform: translateX(-30px); /* 左に-30pxの位置から */
   transition: opacity .8s, transform .8s; /* 透過率と縦方向の移動を0.8秒 */
-h2{
+.h201{
         font-family: "Noto Serif JP";
         text-align: center;
-        margin: 30px auto 15px auto;
+        margin: -200px auto 15px auto;
     font-size: 24px;
     color: #574e00;
+    /* border: 1px solid #000; */
 }
 p{width:700px;
     /* border: 1px solid #000; */
@@ -635,6 +636,20 @@ p{width:700px;
   transform: translateX(0px); /* 0px右に移動する */
   transition-delay: 0.2s; /* フェード開始を秒遅らせる */
 }
+.flower01{
+    margin: -20px 0 0 780px;
+    transform: rotate(15deg);   
+}
+.flower02{
+    margin:0 0 0 80px ; 
+ }
+.flower03{
+    margin:0 0 0 800px ; 
+ }
+.flower04{
+    margin:0 0 0 80px ; 
+ }
+
 
 .text01{
     /* border: 1px solid #000; */
@@ -644,9 +659,35 @@ p{width:700px;
     /* border: 1px solid #000; */
     padding:0 0 80px 0;
 }
-.h203{
-    padding: 10px 0 0 0;
+.h202{
+        font-family: "Noto Serif JP";
+        text-align: center;
+        margin: -180px auto 15px auto;
+    font-size: 24px;
+    color: #574e00;
+    /* border: 1px solid #000; */
 }
+.h203{
+        font-family: "Noto Serif JP";
+        text-align: center;
+        margin: -150px auto 15px auto;
+    font-size: 24px;
+    color: #574e00;
+    /* border: 1px solid #000; */
+}
+.h204{
+        font-family: "Noto Serif JP";
+        text-align: center;
+        margin: -150px auto 15px auto;
+    font-size: 24px;
+    color: #574e00;
+    /* border: 1px solid #000; */
+}
+
+
+
+
+
 .text03{
     /* border: 1px solid #000; */
     padding:20px 0 80px 0;
