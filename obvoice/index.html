@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>タイトル</title>
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<!--jQuery本体-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/jquery.inview.js"></script>
+
+
+<!--ready関数-->
+<script>
+$(function () {
+    $(".voicetext").on("inview", function () {
+        $(this).addClass("inview");
+    });
+});
+</script>
+
+</head>
+
+
+<body>
+<div class="wrapperob">
+
+<header class="headerob">
+    <nav class="navob">
+        <ul>
+            <li>学校案内</li>
+            <li>年間行事</li>
+            <li>卒業生の声</li>
+            <li>ギャラリー</li>
+        </ul>
+    </nav>
+
+
+</header>
+
+<h1 class="h1ob">Voices from Graduates</h1>
+<h2 class="h2ob">顕現体験談</h2>
+
+<div class="voicebox">
+    <div class="animebox_left">
+    <div class="voicetext">
+        <p class="voicetitle">揺らぎを聞く日々</p>
+        <p class="name">第7期生　南條 真理</p>
+        <p class="honbun">入塾前は自分に自信がありませんでしたが、義塾で「声」を整えてから、
+            毎朝の光の揺らぎがはっきり見えるようになりました。<br>
+            今は大学で心理学を学びつつ、顕現の研究を続けています。</p>
+    </div>
+    </div><!-- animebox_left -->
+
+    <div class="animebox_right">
+    <div class="voicepic"><img src="../img/voice01.png" alt="" width="800px"></div>
+    </div>
+
+
+</div>
+
+
+
+</div><!-- wrapperob -->
+</body>
+</html>
