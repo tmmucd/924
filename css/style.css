@@ -139,8 +139,8 @@ a:link,a:hover,a:visited,a:active{}
 }
 .li05{
     border: 1px solid #000;
-    /* background-image: url(../img/bg02.jpg); */
-    /* background-size: 45px; */
+    background-image: url(../img/bg02.jpg);
+    background-size: 45px;
     /* width: fit-content; */
 }
 .li06{
@@ -768,24 +768,44 @@ p{width:700px;
 }
 
 /* *********************ここから卒業生の声****************** */
-
 .wrapperob{
     width: 100%;
     background-color: #f8f8f8;
     /* background-color: #00ce22; */
+    color: #3b3b3b;
+    overflow: hidden;
 }
 
 .headerob{
     height:110px;
+    width: auto;
     /* border: 1px solid #000; */
-    border-bottom: 40px solid #3b3b3b ;
+    border-bottom: 40px solid #ffe13a ;
     margin:0 0 30px 0;
+    padding: 15px 0 0 1040px;
+    display: flex;
+    /* background-color: #1bad07; */
 }
 
+.testob{
+    height:1000px;
+        /* border: 1px solid #000; */
+}
+
+
 .navob{
-    background-color: #ffe13a;
+    background-color: #3b3b3b;
     width: fit-content;
-    ul{display: flex;}
+    height: fit-content;
+    padding:8px;
+    border-radius: 25px;
+
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+/* padding: 6px 40px; */
+        ul{display: flex;}
 }
 
 .navob li{
@@ -793,32 +813,48 @@ p{width:700px;
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
+    color:#f8f8f8;
+    a,a:link{color:#f8f8f8;}
+      a{
+    /* color:red; */
+          padding-bottom: 3px; /* テキストと下線の間隔 */
+  /* font-size: 60px; */
+  background-image: linear-gradient(#ffe13a, #ffe13a);
+  background-repeat: no-repeat;
+  background-position: bottom right; /* 下線の初期位置 */
+  background-size: 0 1px; /* 下線のサイズ（横幅、高さ） */
+  transition: background-size 0.3s;
+  }
+  a:visited{
+    /* color:blue; */
+  }
+  a:hover{
+    color: #ffe13a;
+      background-position: bottom left; /* 下線のホバー時位置 */
+  background-size: 100% 1px; /* 下線の横幅を100%にする */
+  }
 }
-
-
-
 
 .h1ob{
     text-align: center;
     font-size: 48px;
     font-family: "Outfit";
     font-weight: 600;
-    color: #3b3b3b;
-}
+    color: #3b3b3b;}
 .h2ob{
     text-align: center;
     font-size: 16px;
     /* font-weight: 600; */
     color: #3b3b3b;
     margin: -10px 0 50px 0;
+    padding: 0 0 10px 0 ;
+    /* border-bottom: 20px solid #ffe13a; */
 }
-
-
-
 
 
 .voicebox{
     display: flex;
+    margin:0 0 150px 0;
 }
 
 .voicetext{
@@ -834,12 +870,12 @@ p{width:700px;
                 font-size: 48px;
                 font-weight: 800;
                 color: #ffffff;
-                margin: 0 0 0 100px;
+                margin: 0 0px 0 100px;
 
         }
         .name{
             transform:skewX(20deg);
-            margin: 30px 0 0 130px;
+            margin: 20px 0 0 125px;
             color: #3b3b3b;
             font-weight: 500;
 
@@ -847,24 +883,12 @@ p{width:700px;
         .honbun{
             transform:skewX(20deg);
             width:500px;
-            margin: 20px 0 0 155px;
+            margin: 20px 0 0 150px;
             color: #3b3b3b;
             /* border: 1px solid #000; */
 
         }
 }
-.animebox_left {
-  animation: slideinLeft 1s ;
-}
-@keyframes slideinLeft {
-  0% {
-    transform: translateX(-80px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 
 .voicepic{
     /* background-image: url(../img/voice01.jpg); */
@@ -878,15 +902,252 @@ p{width:700px;
     transform:skewX(-20deg);
         img{transform:skewX(20deg) scale(1.2);}
 }
-
-.animebox_right {
-    animation: slideinRight 1s;
-}
-@keyframes slideinRight {
-  0% {
+.u-fade-type-up-right{
     transform: translateX(80px);
-  }
-  100% {
-    transform: translateX(50);
-  }
+    opacity: 0;
+    overflow: hidden;
+    
+}
+.u-fade-type-up-right.is-active{
+    transition: 1s;
+    transform: translateX(0);
+    opacity: 1;
+    overflow: hidden;
+    /* border: 3px solid #be0707; */
+    padding: 0 0 0 20px;
+    margin: 0 0 0 -20px;
+}
+
+
+.voicepic02{
+    width:810px;
+    height:300px;
+    background-color: #ffe13a;
+    margin: 0 0 0 -100px;
+    transform:skew(-20deg,0);
+    padding: 0 0 0 0;
+    overflow: hidden;
+            img{transform:skewX(20deg) ;
+               /* object-fit: cover;} */
+            object-position: 0%  20%;}
+}
+/* アニメーションスタイル */
+/* ---------------------------- */
+
+/* アニメーション前 */
+.u-fade-type-up{
+    transform: translateX(-80px);
+    opacity: 0;
+}
+
+/* トリガー発火でis-activeを付与 */
+.u-fade-type-up.is-active{
+    transition: 1s;
+    transform: translateX(0);
+    opacity: 1;
+    /* border: 3px solid #0aba25; */
+}
+
+
+.voicetext02,.voicetext12{
+    /* background-image: url(../img/voice01.jpg); */
+    /* background-size: 200%; */
+    /* background-color: #000; */
+    /* border: 1px solid #000; */
+        background-color: #ffe13a;
+    margin: 0 0 0 40px;
+    transform:skew(-20deg,0);
+    padding: 25px 0 0 0;
+    width: 900px;
+    height: 300px;
+       .voicetitle{
+                transform:skewX(20deg);
+                font-size: 48px;
+                font-weight: 800;
+                color: #ffffff;
+                margin: 0 0 0 80px;
+
+        }
+        .name{
+            transform:skewX(20deg);
+            margin: 20px 0 0 110px;
+            color: #3b3b3b;
+            font-weight: 500;
+
+        }
+        .honbun{
+            transform:skewX(20deg);
+            width:500px;
+            margin: 20px 0 0 136px;
+            color: #3b3b3b;
+            /* border: 1px solid #000; */
+
+        }
+}
+.voicetext12{
+    margin: 0 0 0 -120px;
+    padding: 25px 0 0 100px;
+}
+
+.voicepic{
+    /* background-image: url(../img/voice01.jpg); */
+    /* background-size: 200%; */
+    /* background-color: #000; */
+    /* border: 1px solid #000; */
+    width: 800px;
+    height: 300px;
+    margin: 0 0 0 40px;
+    overflow: hidden;
+    transform:skewX(-20deg);
+        img{transform:skewX(20deg) scale(1.2);}
+}
+.voicepic04{
+    width:810px;
+    height:300px;
+    background-color: #ffe13a;
+    margin: 0 0 0 -100px;
+    transform:skew(-20deg,0);
+    padding: 0 0 0 110px;
+    overflow: hidden;
+            img{transform:skewX(20deg) ;
+               /* object-fit: cover;} */
+            object-position: 0%  20%;}
+}
+
+.pagetop3 {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    background: #3b3b3b;
+    border: solid 2px #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.pagetop__arrow3 {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    transform: translateY(20%) rotate(-45deg);
+}@media (hover: hover) and (pointer: fine) {
+    .pagetop3:hover, .pagetop3:hover .pagetop__arrow3 {
+        background: #ffffff;
+        border-color: #3b3b3b;
+    }
+}
+
+.career{
+    width:600px;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 0  auto;
+}
+
+/* ***********ここから進路のタブ */
+.tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid #ff5d78;
+    margin: 0 auto;
+    width: 1000px;
+}
+.tab-label01,.tab-label02,.tab-label03,.tab-label04 {
+    color: White;
+    background: #c3c3c3;
+    /* margin:0 5px 0 260px ; */
+    margin: 0 5px 0 0px;
+    padding: 5px 5px;
+    text-align: center;
+    width: 130px;
+    order: -1;
+    /* border: 1px solid #000; */
+}
+.tab-label02 {
+    color: White;
+    background: #c3c3c3;
+    /* margin:0 5px 0 260px ; */k
+    margin: 0 5px 0 0px;
+    padding: 5px 5px;
+    text-align: center;
+    width: 130px;
+    order: -1;
+    /* border: 1px solid #000; */
+}
+
+
+
+
+.tab-content {
+    width: 100%;
+    display: none;
+}
+/* アクティブなタブ */
+.tab-switch:checked+.tab-label01,.tab-switch:checked+.tab-label02,.tab-switch:checked+.tab-label03,.tab-switch:checked+.tab-label04 {
+    background: #ffe13a;
+    /* margin:0 5px 0 260px ; */
+    /* border: 1px solid #000; */
+}
+.tab-switch:checked+.tab-label01+.tab-content,
+.tab-switch:checked+.tab-label02+.tab-content,
+.tab-switch:checked+.tab-label03+.tab-content,
+.tab-switch:checked+.tab-label04+.tab-content {
+     display: block;
+}
+/* ラジオボタン非表示 */
+.tab-switch {
+    display: none;
+}
+/* **************進路のタブここまで */
+
+.data2024,.data2023{
+    width:1000px;
+    height: 600px;
+    border: 1px solid #00af32;
+    margin: 0 auto ;
+    background-color: #ffe13a;
+    .tbbox{
+        display: flex;
+        /* border: 1px solid #ad0000; */
+        width: fit-content;
+        margin: 70px auto 0 auto;
+    }
+    table{
+        background-color: #fff;
+        margin: 0 5px 0 0 ;
+        font-size: 14px;
+        height: fit-content;
+    }
+    table:last-child{margin:0}
+    th{
+        font-weight: normal;
+        padding: 10px;
+        border-right:1px solid #c3c3c3 ;
+        /* background-color: #dddddd; */
+        background-color:#d4d4d4;
+    }
+    td{
+        padding: 10px;
+        border-bottom: 1px solid #c3c3c3;
+    }
+    td:last-child{
+        border-left: 1px solid #c3c3c3;
+    }
+}
+
+.notes{
+    font-size:12px;
+    width: 556px;
+    border: 1px solid #000;
+    margin: 0  auto;
+    display: flex;
+    flex-direction: column;
+    p{
+        
+    }
 }

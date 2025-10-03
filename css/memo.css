@@ -1,0 +1,308 @@
+
+
+
+
+.tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-label {
+    color: White;
+    background: LightGray;
+    margin-right: 5px;
+    padding: 3px 12px;
+    order:-1;
+}
+.tab-content {
+    width: 100%;
+    display: none;
+}
+.tab-switch:checked+.tab-label {
+    background: DeepSkyBlue;
+}
+.tab-switch:checked+.tab-label+.tab-content {
+    display: block;
+}
+.tab-switch {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapperob{
+    width: 100%;
+    background-color: #f8f8f8;
+    /* background-color: #00ce22; */
+    color: #3b3b3b;
+    overflow: hidden;
+}
+
+.headerob{
+    height:110px;
+    width: auto;
+    /* border: 1px solid #000; */
+    border-bottom: 40px solid #ffe13a ;
+    margin:0 0 30px 0;
+    padding: 15px 0 0 1040px;
+    display: flex;
+    /* background-color: #1bad07; */
+}
+
+.testob{
+    height:1000px;
+        /* border: 1px solid #000; */
+}
+
+
+.navob{
+    background-color: #3b3b3b;
+    width: fit-content;
+    height: fit-content;
+    padding:8px;
+    border-radius: 25px;
+
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+/* padding: 6px 40px; */
+        ul{display: flex;}
+}
+
+.navob li{
+    font-family:"Noto Sans JP" ;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    color:#f8f8f8;
+    a,a:link,a:hover,a:visited,a:active{color:#f8f8f8;}
+}
+
+.h1ob{
+    text-align: center;
+    font-size: 48px;
+    font-family: "Outfit";
+    font-weight: 600;
+    color: #3b3b3b;}
+.h2ob{
+    text-align: center;
+    font-size: 16px;
+    /* font-weight: 600; */
+    color: #3b3b3b;
+    margin: -10px 0 50px 0;
+    padding: 0 0 10px 0 ;
+    /* border-bottom: 20px solid #ffe13a; */
+}
+
+
+.voicebox{
+    display: flex;
+    margin:0 0 150px 0;
+}
+
+.voicetext{
+    width:810px;
+    height:300px;
+    background-color: #ffe13a;
+    margin: 0 0 0 -55px;
+    transform:skew(-20deg,0);
+    padding: 25px 0 0 0;
+
+        .voicetitle{
+                transform:skewX(20deg);
+                font-size: 48px;
+                font-weight: 800;
+                color: #ffffff;
+                margin: 0 0 0 100px;
+
+        }
+        .name{
+            transform:skewX(20deg);
+            margin: 30px 0 0 130px;
+            color: #3b3b3b;
+            font-weight: 500;
+
+        }
+        .honbun{
+            transform:skewX(20deg);
+            width:500px;
+            margin: 20px 0 0 155px;
+            color: #3b3b3b;
+            /* border: 1px solid #000; */
+
+        }
+}
+.animebox_left {
+  animation: slideinLeft 1s ;
+}
+@keyframes slideinLeft {
+  0% {
+    transform: translateX(-80px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.voicepic{
+    /* background-image: url(../img/voice01.jpg); */
+    /* background-size: 200%; */
+    /* background-color: #000; */
+    /* border: 1px solid #000; */
+    width: 800px;
+    height: 300px;
+    margin: 0 0 0 40px;
+    overflow: hidden;
+    transform:skewX(-20deg);
+        img{transform:skewX(20deg) scale(1.2);}
+}
+
+.animebox_right {
+    animation: slideinRight 1s;
+}
+@keyframes slideinRight {
+  0% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(50);
+  }
+}
+
+
+.u-fade-type-up-right{
+    transform: translateX(80px);
+    opacity: 0;
+    overflow: hidden;
+    
+
+}
+.u-fade-type-up-right.is-active{
+    transition: 1s;
+    transform: translateX(0);
+    opacity: 1;
+    overflow: hidden;
+    /* border: 3px solid #be0707; */
+    padding: 0 0 0 20px;
+    margin: 0 0 0 -20px;
+}
+
+
+
+
+
+
+.voicepic02{
+    width:810px;
+    height:300px;
+    background-color: #ffe13a;
+    margin: 0 0 0 -100px;
+    transform:skew(-20deg,0);
+    padding: 0 0 0 0;
+    overflow: hidden;
+            img{transform:skewX(20deg) ;
+               /* object-fit: cover;} */
+            object-position: 0%  20%;}
+}
+
+
+
+
+/* アニメーションスタイル */
+/* ---------------------------- */
+
+/* アニメーション前 */
+.u-fade-type-up{
+    transform: translateX(-80px);
+    opacity: 0;
+}
+
+/* トリガー発火でis-activeを付与 */
+.u-fade-type-up.is-active{
+    transition: 1s;
+    transform: translateX(0);
+    opacity: 1;
+    /* border: 3px solid #0aba25; */
+}
+
+
+.animebox_left {
+  /* animation: slideinLeft 1s ; */
+}
+
+/*  
+@keyframes slideinLeft {
+  0% {
+    transform: translateX(-80px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}*/
+
+.voicetext02,.voicetext12{
+    /* background-image: url(../img/voice01.jpg); */
+    /* background-size: 200%; */
+    /* background-color: #000; */
+    /* border: 1px solid #000; */
+        background-color: #ffe13a;
+    margin: 0 0 0 40px;
+    transform:skew(-20deg,0);
+    padding: 25px 0 0 0;
+    width: 900px;
+    height: 300px;
+       .voicetitle{
+                transform:skewX(20deg);
+                font-size: 48px;
+                font-weight: 800;
+                color: #ffffff;
+                margin: 0 0 0 80px;
+
+        }
+        .name{
+            transform:skewX(20deg);
+            margin: 30px 0 0 110px;
+            color: #3b3b3b;
+            font-weight: 500;
+
+        }
+        .honbun{
+            transform:skewX(20deg);
+            width:500px;
+            margin: 20px 0 0 136px;
+            color: #3b3b3b;
+            /* border: 1px solid #000; */
+
+        }
+}
+.voicetext12{
+    margin: 0 0 0 -120px;
+    padding: 25px 0 0 100px;
+}
+
+.voicepic{
+    /* background-image: url(../img/voice01.jpg); */
+    /* background-size: 200%; */
+    /* background-color: #000; */
+    /* border: 1px solid #000; */
+    width: 800px;
+    height: 300px;
+    margin: 0 0 0 40px;
+    overflow: hidden;
+    transform:skewX(-20deg);
+        img{transform:skewX(20deg) scale(1.2);}
+}
