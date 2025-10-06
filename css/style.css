@@ -950,10 +950,6 @@ p{width:700px;
 
 
 .voicetext02,.voicetext12{
-    /* background-image: url(../img/voice01.jpg); */
-    /* background-size: 200%; */
-    /* background-color: #000; */
-    /* border: 1px solid #000; */
         background-color: #ffe13a;
     margin: 0 0 0 40px;
     transform:skew(-20deg,0);
@@ -1044,18 +1040,29 @@ p{width:700px;
 
 .career{
     width:600px;
-    height: 500px;
+    height: ;
     border: 1px solid #000;
     margin: 0  auto;
 }
+
+.h2ca{
+    font-family: "Noto Serif JP";
+    font-size: 32px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+
+
 
 /* ***********ここから進路のタブ */
 .tab-wrap {
     display: flex;
     flex-wrap: wrap;
-    border: 5px solid #ff5d78;
-    margin: 0 auto;
-    width: 1000px;
+    /* border: 5px solid #ff5d78; */
+    margin: 0 auto 50px auto;
+    width: 800px;
+    /* background-color: #ffe13a; */
 }
 .tab-label01,.tab-label02,.tab-label03,.tab-label04 {
     color: White;
@@ -1081,10 +1088,10 @@ p{width:700px;
 }
 
 
-
-
 .tab-content {
     width: 100%;
+    height: ;
+    /* border: 1px solid #000; */
     display: none;
 }
 /* アクティブなタブ */
@@ -1106,16 +1113,18 @@ p{width:700px;
 /* **************進路のタブここまで */
 
 .data2024,.data2023,.data2022,.data2021{
-    width:1000px;
-    height: 600px;
-    border: 1px solid #00af32;
-    margin: 0 auto ;
+    width:800px;
+    height: 80vh;
+    /* border: 1px solid #00af32; */
+    margin:  ;
     background-color: #ffe13a;
     .tbbox{
         display: flex;
         /* border: 1px solid #ad0000; */
         width: fit-content;
-        margin: 70px auto 0 auto;
+        height:500px;
+        margin: 0 auto;
+        padding: 50px 0 0 0 ;
     }
     table{
         background-color: #fff;
@@ -1144,9 +1153,20 @@ p{width:700px;
     font-size:12px;
     width: 556px;
     /* border: 1px solid #f00000; */
-    margin: 10px  auto;
+    margin: 0px  auto ;
 }
 .notes01,.notes02{
     display: flex;
     justify-content: flex-end;
+}
+
+.footerob{
+    height:50px;
+    color: #3b3b3b;
+    font-size: 12px;
+    text-align: center;
+    padding: 15px 0 0 0;
+    p{
+        text-align: center;
+    }
 }
